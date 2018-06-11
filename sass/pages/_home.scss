@@ -1,0 +1,27 @@
+.section-about-me {
+    background-color: $color-grey-light;
+    padding: 15rem 0 10rem 0;
+    margin-top: -14vh;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    
+    &__img-container {
+        display: flex;
+    }
+    
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.section-my-work {
+    padding: 10rem 0;
+}
+
+.section-contact-me {
+    background-color: $color-grey-light;
+    padding: 10rem 0;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}

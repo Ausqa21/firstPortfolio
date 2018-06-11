@@ -1,0 +1,21 @@
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    &__img {
+        width: 32%;
+        height: 25rem;
+        outline-offset: .5rem;
+        transition: all .2s;
+        
+        &:hover {
+            transform: scale(1.1);
+            outline: .5rem solid $mainOrange;
+        }
+    }
+    
+    &:hover &__img:not(:hover) {
+        opacity: .4;
+    }
+}

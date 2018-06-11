@@ -1,0 +1,51 @@
+.heading-primary {
+    text-transform: uppercase;
+    text-align: left;
+    color: $color-text-light;
+    
+    &--main {
+        font-size: 5rem;
+        letter-spacing: .2rem;
+        animation: moveInDown 1.2s ease-out .5s;
+        animation-fill-mode: backwards;
+    }
+
+    &--tagline {
+        word-spacing: .3rem;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+        animation: moveInUp 1.2s ease-out .5s;
+        animation-fill-mode: backwards;
+    }
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: $color-text-dark;
+    box-sizing: border-box;
+}
+
+.heading-secondary {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $auxBlue, $mainBlue);
+    -webkit-background-clip: text;
+    letter-spacing: .3rem;
+    color: transparent;
+    position: relative;
+    transition: all .2s;
+    
+    &:hover {
+        letter-spacing: .7rem;
+        word-spacing: .5rem;
+        text-shadow: 1rem .2rem .5rem rgba($color-black, .2);
+        transform: scale(1.5) skewX(-7deg);
+    }
+}

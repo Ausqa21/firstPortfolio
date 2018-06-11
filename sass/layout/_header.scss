@@ -1,0 +1,23 @@
+.header {
+    height: 95vh;
+    background-image: url(../img/html-1.jpg);
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(100% 0, 100% 85%, 20% 85%, 0 100%, 0 0);
+
+    &__text-box {
+        background-color: rgba($mainBlue, .75);
+        border-radius: 2rem;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        text-align: left;
+        margin-left: 1.5rem;
+        padding: 1.5rem 2.5rem;
+        clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 90%, 97% 100%, 0 100%);
+        animation: zoomIn .7s ease-out;
+    }
+}
