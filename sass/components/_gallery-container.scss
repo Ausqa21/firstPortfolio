@@ -8,6 +8,8 @@
         height: 25rem;
         outline-offset: .5rem;
         transition: all .2s;
+        /* flex-basis: 32rem; */
+        flex-shrink: 0;
         
         &:hover {
             transform: scale(1.1);
