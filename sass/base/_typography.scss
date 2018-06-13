@@ -37,6 +37,7 @@ body {
     display: inline-block;
     background-image: linear-gradient(to right, $auxBlue, $mainBlue);
     -webkit-background-clip: text;
+    background-clip: text;
     letter-spacing: .3rem;
     color: transparent;
     position: relative;
