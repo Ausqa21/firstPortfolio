@@ -1,3 +1,23 @@
+.btn:link, .btn:visited, input[type=submit] {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  border-style: groove;
+  border-radius: .5rem;
+  position: relative;
+  transition: all .15s;
+  background-color: #ffa500;
+  color: #f7f7f7; }
+
+.btn:hover, input[type=submit]:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 0.5rem rgba(0, 0, 0, 0.2); }
+
+.btn:active, input[type=submit]:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2); }
+
 *,
 *::after,
 *::before {
@@ -95,33 +115,15 @@ body {
 .u-margin-bottom-6 {
   margin-bottom: 6rem; }
 
-.btn:link, .btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  font-weight: 600;
-  /* padding: 1rem 1.5rem; */
-  border-style: groove;
-  border-radius: .5rem;
-  position: relative;
-  transition: all .15s;
-  background-color: #ffa500;
-  color: #f7f7f7; }
-
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 0.5rem rgba(0, 0, 0, 0.2); }
-
-.btn:active {
-  transform: translateY(-0.1rem);
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2); }
-
 .btn--animated {
   animation: moveInLeft .8s ease-out 1.5s;
   animation-fill-mode: backwards; }
 
+.btn--small {
+  padding: 1rem 2.5rem; }
+
 .btn--large {
-  padding: 1rem 2rem; }
+  padding: 1.1rem 3.6rem; }
 
 .gallery-container {
   display: flex;
@@ -182,6 +184,15 @@ body {
 .col-1-of-2 {
   width: calc((100% - 6rem) / 2); }
 
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem; }
+
+.flex-row-inner {
+  display: flex;
+  justify-content: space-between; }
+
 .section-about-me {
   background-color: #e3e3e3;
   padding: 15rem 0 10rem 0;
@@ -202,3 +213,20 @@ body {
   padding: 10rem 0;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem; }
+  .section-contact-me__content-container {
+    flex-basis: 40rem; }
+  .section-contact-me__form-container {
+    flex-basis: 50rem;
+    flex-shrink: 1; }
+
+input, textarea {
+  margin-bottom: 1.3rem; }
+
+.subject-input {
+  flex-basis: 100%; }
+
+textarea {
+  flex-basis: 100%; }
+
+input[name=name], input[type=email] {
+  flex-basis: 40%; }

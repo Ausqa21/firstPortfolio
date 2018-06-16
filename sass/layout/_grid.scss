@@ -20,3 +20,15 @@
 .col-1-of-2 {
     width: calc((100% - #{$gutter-horizontal}) / 2);
 }
+
+.flex-row {
+    display: flex;
+    // margin: 1.5rem;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.flex-row-inner {
+    display: flex;
+    justify-content: space-between;
+}

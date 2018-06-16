@@ -24,4 +24,42 @@
     padding: 10rem 0;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
+
+    &__content-container {
+        flex-basis: 40rem;
+    }
+
+    &__form-container {
+        flex-basis: 50rem;
+        flex-shrink: 1;
+    }
+}
+
+input, textarea {
+    margin-bottom: 1.3rem;
+    
+}
+
+.subject-input {
+    flex-basis: 100%;
+}
+
+textarea {
+    flex-basis: 100%;
+}
+
+input[name=name], input[type=email] {
+    flex-basis: 40%;
+}
+
+input[type=submit] {
+    @extend %btn-placeholder;
+
+    &:hover {
+        @extend %btn-hover;
+    }
+
+    &:active {
+        @extend %btn-active;
+    }
 }
