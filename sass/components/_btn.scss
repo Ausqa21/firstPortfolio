@@ -1,6 +1,7 @@
 .btn {
     &:link, &:visited {
         @extend %btn-placeholder;
+        position: relative;
     }
 
     &:hover {
@@ -18,10 +19,22 @@
 
     &--small {
         padding: 1rem 2.5rem;
+        border-radius: 10rem;
     }
     
     &--large {
         padding: 1.1rem 3.6rem;
+        border-radius: 10rem;
     }
-
 }
+
+//.btn--nav {
+//    border-radius: .4rem;
+//    border: .2rem solid $mainOrange;
+//    transition: all .3s;
+//    
+//    &:hover {
+//        background-color: $mainOrange;
+//        color: white;
+//    }
+//}

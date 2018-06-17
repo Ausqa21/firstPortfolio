@@ -54,6 +54,7 @@ input[name=name], input[type=email] {
 
 input[type=submit] {
     @extend %btn-placeholder;
+    border: none;
 
     &:hover {
         @extend %btn-hover;

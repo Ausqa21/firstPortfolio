@@ -3,16 +3,13 @@
   text-decoration: none;
   display: inline-block;
   font-weight: 600;
-  border-style: groove;
-  border-radius: .5rem;
-  position: relative;
   transition: all .15s;
   background-color: #ffa500;
   color: #f7f7f7; }
 
 .btn:hover, input[type=submit]:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 0.5rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2); }
 
 .btn:active, input[type=submit]:active {
   transform: translateY(-0.1rem);
@@ -115,15 +112,20 @@ body {
 .u-margin-bottom-6 {
   margin-bottom: 6rem; }
 
+.btn:link, .btn:visited {
+  position: relative; }
+
 .btn--animated {
   animation: moveInLeft .8s ease-out 1.5s;
   animation-fill-mode: backwards; }
 
 .btn--small {
-  padding: 1rem 2.5rem; }
+  padding: 1rem 2.5rem;
+  border-radius: 10rem; }
 
 .btn--large {
-  padding: 1.1rem 3.6rem; }
+  padding: 1.1rem 3.6rem;
+  border-radius: 10rem; }
 
 .gallery-container {
   display: flex;
@@ -144,27 +146,6 @@ body {
   .gallery-container__img {
     width: 100%;
     height: 100%; }
-
-.header {
-  height: 95vh;
-  background-image: url(../img/html-1.jpg);
-  background-attachment: fixed;
-  position: relative;
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(100% 0, 100% 85%, 20% 85%, 0 100%, 0 0); }
-  .header__text-box {
-    background-color: rgba(84, 139, 207, 0.75);
-    border-radius: 2rem;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    text-align: left;
-    margin-left: 1.5rem;
-    padding: 1.5rem 2.5rem;
-    clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 90%, 97% 100%, 0 100%);
-    animation: zoomIn .7s ease-out; }
 
 .row {
   max-width: 120rem;
@@ -192,6 +173,61 @@ body {
 .flex-row-inner {
   display: flex;
   justify-content: space-between; }
+
+.header {
+  height: 95vh;
+  background-image: url(../img/html-1.jpg);
+  background-attachment: fixed;
+  position: relative;
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(100% 0, 100% 85%, 20% 85%, 0 100%, 0 0); }
+  .header__text-box {
+    background-color: rgba(84, 139, 207, 0.75);
+    border-radius: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: left;
+    margin-left: 1.5rem;
+    padding: 1.5rem 2.5rem;
+    clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 90%, 97% 100%, 0 100%);
+    animation: zoomIn .7s ease-out; }
+
+.navigation {
+  background-color: rgba(0, 0, 0, 0.5); }
+  .navigation__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .navigation__list {
+    list-style-type: none; }
+    .navigation__list--main {
+      display: flex;
+      justify-content: space-between;
+      flex: 0 40rem;
+      flex-wrap: wrap; }
+    .navigation__list--social {
+      display: flex;
+      flex: 0 20rem; }
+  .navigation__item {
+    margin: .3rem 1rem;
+    flex-shrink: 0;
+    text-decoration: none;
+    color: white; }
+    .navigation__item-main:link, .navigation__item-main:visited {
+      text-align: center;
+      color: white;
+      padding: 1rem 1.2rem;
+      display: inline-block;
+      flex-basis: 7rem;
+      margin-bottom: 0; }
+    .navigation__item-main:hover {
+      border-bottom: 0.15rem solid #ffa500; }
+    .navigation__item-social {
+      padding: 1rem .5rem;
+      /* align-items: center; */ }
 
 .section-about-me {
   background-color: #e3e3e3;
@@ -230,3 +266,6 @@ textarea {
 
 input[name=name], input[type=email] {
   flex-basis: 40%; }
+
+input[type=submit] {
+  border: none; }
