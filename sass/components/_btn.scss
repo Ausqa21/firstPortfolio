@@ -20,11 +20,19 @@
     &--small {
         padding: 1rem 2.5rem;
         border-radius: 10rem;
+        
+        @include respond(phone) {
+            padding: .7rem 1rem;
+        }
     }
     
     &--large {
         padding: 1.1rem 3.6rem;
         border-radius: 10rem;
+        
+        @include respond(phone) {
+            padding: .7rem 2rem;
+        }
     }
 }
 

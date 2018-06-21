@@ -51,13 +51,15 @@
                     </h2>
                 </div>
                 <div class="row">
-                    <div class="col-1-of-2">
-                        <div class="section-about-me__img-container">
-                            <img class="section-about-me__img" src="/img/html-3.jpg" alt="">
+                    <div class="section-about-me__container">
+                        <div class="section-about-me__img-section">
+                            <div class="section-about-me__img-container">
+                                <img class="section-about-me__img" src="img/html-3.jpg" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-1-of-2">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quasi excepturi velit. Harum obcaecati impedit voluptate cumque. Veniam facere quam, quibusdam accusantium adipisci sit ipsum, recusandae doloribus repellendus. Unde, voluptatem, accusantium! Maxime nostrum illo nulla perspiciatis nemo, sapiente voluptatem, saepe dolor minima harum deleniti, velit unde iusto eum magni odit!</p>
+                        <div class="section-about-me__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quasi excepturi velit. Harum e voluptatem, saepe dolor minima harum deleniti, velit unde iusto eum magni odit!</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -88,30 +90,45 @@
                     </h2>
                 </div>
                 <div class="row">
-                    <div class="flex-row">
+                    <div class="flex-container">
                         <div class="section-contact-me__content-container">
                             <p class="section-contact-me__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloremque expedita consectetur sed! Voluptatem ad maxime sed est dolor corrupti necessitatibus ipsam eaque, a sequi quibusdam ab quae quisquam nostrum!</p>
                         </div>
                         <div class="section-contact-me__form-container">
                             <form class="section-contact-me__form" action="#" method="POST">
-                                <div class="flex-row-inner">
-                                    <input type="text" name="name" placeholder="NAME">
-                                    <input type="email" name="email" placeholder="EMAIL">
+                                <div class="input-form-1">
+                                    <div class="input">
+                                        <input type="text" name="name" placeholder="NAME">
+                                    </div>
+                                    <div class="input">
+                                        <input type="email" name="email" placeholder="EMAIL">
+                                    </div>
                                 </div>
-                                <div class="flex-row-inner">
-                                    <input class="subject-input" type="text" name="subject" placeholder="SUBJECT">
+                                <div class="input-form-2">
+                                    <div class="submit">
+                                        <input type="text" name="subject" placeholder="SUBJECT">
+                                    </div>
                                 </div>
-                                <div class="flex-row-inner">
-                                    <textarea name="message" id="msg" cols="50" rows="10" placeholder="MESSAGE"></textarea>
+                                <div class="msg-box">
+                                    <div class="msg">
+                                        <textarea name="message" id="msg" cols="30" rows="10" placeholder="MESSAGE"></textarea>
+                                    </div>
                                 </div>
-                                <div class="flex-row-inner">
-                                    <input class="btn--small" type="submit">
-                                </div>
+                                <input class="btn--small" type="submit">
                             </form>
                         </div>
                     </div>
                 </div>
             </section>
+            <footer class="footer">
+                <div class="row">
+                    <div class="footer__text-container">
+                        <p class="footer__text">
+                            Copyright &copy; 2018 by Godric Oscar Dolphine. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </footer>
         </main>
     </body>
 </html>

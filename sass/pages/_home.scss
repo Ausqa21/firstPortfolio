@@ -1,12 +1,43 @@
 .section-about-me {
-    background-color: $color-grey-light;
     padding: 15rem 0 10rem 0;
-    margin-top: -14vh;
+    margin-top: -15vh;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
+    background-image: linear-gradient(to right bottom, rgba($auxBlue, .3), $mainBlue);
+    background-position: center;
+    background-size: cover;
+    
+    @include respond(phone) {
+        padding: 8rem 0 7rem 0;
+        border-bottom-left-radius: .7rem;
+        border-bottom-right-radius: .7rem;
+    }
+    
+    &__container {
+        display: flex;
+        padding: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    &__img-section {
+        display: flex;
+        /* justify-content: flex-start; */
+        margin-right: 2rem;
+        flex: 0 45rem;
+        
+        @include respond(phone) {
+            margin: 0 1.5rem 1.5rem 1.5rem;
+            
+        }
+    }
+    
+    &__text {
+        flex-basis: 30rem;
+    }
     
     &__img-container {
-        display: flex;
+        flex-basis: 100%;
     }
     
     &__img {
@@ -16,45 +47,135 @@
 }
 
 .section-my-work {
-    padding: 10rem 0;
+    padding: 10rem 3rem;
+    
+    @include respond(phone) {
+        padding: 7rem .7rem;
+    }
 }
 
 .section-contact-me {
-    background-color: $color-grey-light;
-    padding: 10rem 0;
+    padding: 10rem 0 5rem 0;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
+    background-image: linear-gradient(to right bottom, rgba($auxBlue, .3), $mainBlue);
+    background-position: center;
+    background-size: cover;
+    
+    @include respond(phone) {
+        padding: 7rem 3rem 1.5rem 3rem;
+    }
+    
+    /* &__content-container {
+        @include respond(phone) {
+            width: 100%;
+        }
+    } */
 
-    &__content-container {
-        flex-basis: 40rem;
+    &__content {
+        width: 70%;
+        
+        @include respond(phone) {
+            margin-bottom: 1rem;
+            text-align: justify;
+            width: 100%;
+        }
     }
 
     &__form-container {
-        flex-basis: 50rem;
-        flex-shrink: 1;
+        width: 100%;
+    }
+    
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    
+    @include respond(phone) {
+        flex-direction: column;
     }
 }
 
 input, textarea {
     margin-bottom: 1.3rem;
-    
+    padding: .7rem;
+    border-radius: .5rem;
+    border: 1px solid #ccc;
 }
 
-.subject-input {
-    flex-basis: 100%;
+.input-form-1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+    @include respond(phone) {
+        flex-direction: column;
+    }
+}
+
+.input-form-2 {
+    width: 100%;
+}
+
+input[name=subject] {
+    width: 100%;
+}
+
+.msg-box {
+    width: 100%;
 }
 
 textarea {
-    flex-basis: 100%;
+    width: 100%;
 }
 
-input[name=name], input[type=email] {
-    flex-basis: 40%;
+input[type=submit] {
+    align-self: flex-start;
+}
+
+input[name=subject] {
+    
+    @include respond(phone) {
+        
+    }
+}
+
+textarea {
+    border-radius: .5rem;
+    
+    @include respond(phone) {
+        
+    }  
+}
+
+input[name=name] {
+    
+    @include respond(phone) {
+        width: 100%;
+    }
+}
+
+input[type=email] {
+    
+    @include respond(phone) {
+        width: 100%;
+    }
 }
 
 input[type=submit] {
     @extend %btn-placeholder;
     border: none;
+    margin: 0;
+    
+    @include respond(phone) {
+        font-weight: 300;
+    }
 
     &:hover {
         @extend %btn-hover;
@@ -63,4 +184,12 @@ input[type=submit] {
     &:active {
         @extend %btn-active;
     }
+}
+
+input::placeholder {
+    color: #777;
+}
+
+textarea::placeholder {
+    font-size: 1.5rem;
 }

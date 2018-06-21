@@ -2,7 +2,6 @@
     background-color: rgba(black, .5);
     
     &__container {
-//        padding: .5rem 0;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -13,14 +12,19 @@
         
         &--main {
             display: flex;
-            justify-content: space-between;
-            flex: 0 40rem;
+            justify-content: space-around;
+            flex: 1 50rem;
             flex-wrap: wrap;
         }
         
         &--social {
             display: flex;
-            flex: 0 20rem;
+            flex: 0 30rem;
+            justify-content: space-around;
+            
+            @include respond(phone) {
+                display: none;
+            }
         }
     }
     
@@ -29,6 +33,7 @@
         flex-shrink: 0;
         text-decoration: none;
         color: white;
+        font-size: 1.8rem;
         
         &-main {
             &:link, &:visited {
@@ -38,6 +43,13 @@
                 display: inline-block;
                 flex-basis: 7rem;
                 margin-bottom: 0;
+                letter-spacing: .2rem;
+                
+                @include respond(phone) {
+                    padding: .7rem 1rem;
+                    margin-bottom: 1rem;
+                    letter-spacing: normal;
+                }
             }
             
             &:hover {
@@ -47,7 +59,6 @@
         
         &-social {
             padding: 1rem .5rem;
-            /* align-items: center; */
         }
     }
 }

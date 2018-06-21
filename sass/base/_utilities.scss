@@ -4,4 +4,8 @@
 
 .u-margin-bottom-6 {
     margin-bottom: 6rem;
+    
+    @include respond(phone) {
+        margin-bottom: 3rem;
+    }
 }

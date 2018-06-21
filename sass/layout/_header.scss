@@ -19,5 +19,11 @@
         padding: 1.5rem 2.5rem;
         clip-path: polygon(0 10%, 3% 0, 100% 0, 100% 90%, 97% 100%, 0 100%);
         animation: zoomIn .7s ease-out;
+        
+        @include respond(phone) {
+            border-radius: 1rem;
+            margin: .7rem;
+            padding: .7rem 1.2rem;
+        }
     }
 }

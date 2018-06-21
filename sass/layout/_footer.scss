@@ -1,0 +1,11 @@
+.footer {
+    background-color: rgba(black, .7);
+    
+    &__text-container {
+        padding: 1rem;
+    }
+    
+    &__text {
+        color: white;
+    }
+}
