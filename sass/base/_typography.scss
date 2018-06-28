@@ -59,10 +59,12 @@ body {
         font-weight: 400;
     }
     
-    &:hover {
-        letter-spacing: .7rem;
-        word-spacing: .5rem;
-        text-shadow: 1rem .2rem .5rem rgba($color-black, .2);
-        transform: scale(1.5) skewX(-7deg);
+    @media (hover: hover) {
+        &:hover {
+            letter-spacing: .7rem;
+            word-spacing: .5rem;
+            text-shadow: 1rem .2rem .5rem rgba($color-black, .2);
+            transform: scale(1.5) skewX(-7deg);
+        }
     }
 }

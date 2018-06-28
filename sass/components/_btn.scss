@@ -3,7 +3,7 @@
         @extend %btn-placeholder;
         position: relative;
     }
-
+    
     &:hover {
         @extend %btn-hover;
     }

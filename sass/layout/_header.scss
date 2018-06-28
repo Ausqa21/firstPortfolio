@@ -1,11 +1,16 @@
 .header {
-    height: 95vh;
+    height: 100vh;
     background-image: url(../img/html-1.jpg);
     background-attachment: fixed;
     position: relative;
     background-size: cover;
     background-position: top;
-    clip-path: polygon(100% 0, 100% 85%, 20% 85%, 0 100%, 0 0);
+    
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(100% 0, 100% 85%, 20% 85%, 0 100%, 0 0);
+        clip-path: polygon(100% 0, 100% 85%, 20% 85%, 0 100%, 0 0);
+        height: 95vh;
+    }
 
     &__text-box {
         background-color: rgba($mainBlue, .75);

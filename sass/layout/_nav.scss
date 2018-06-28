@@ -1,5 +1,5 @@
 .navigation {
-    background-color: rgba(black, .5);
+    background-color: rgba(black, .8);
     
     &__container {
         display: flex;
@@ -13,7 +13,7 @@
         &--main {
             display: flex;
             justify-content: space-around;
-            flex: 1 50rem;
+            flex: 0 60rem;
             flex-wrap: wrap;
         }
         
@@ -52,8 +52,10 @@
                 }
             }
             
-            &:hover {
-                border-bottom: .15rem solid $mainOrange;
+            @media (hover: hover) {
+                &:hover {
+                    border-bottom: .15rem solid $mainOrange;
+                }
             }
         }
         

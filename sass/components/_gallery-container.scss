@@ -10,49 +10,51 @@
     
     &__item {
         flex-basis: 35rem;
-        height: 23rem;
+        height: 100%;
         flex-grow: 1;
         outline-offset: 1rem;
         transition: all .3s;
         
         @include respond(tab-port) {
-            margin: 1rem;
+            flex-basis: 100%;
             flex-grow: 0;
-            max-width: 60rem;
+            max-width: 60%;
             outline-offset: none;
-            height: 35rem;
+            height: auto;
         }
         
         @include respond(phone) {
             max-width: 50rem;
-            height: 31rem;
+            height: auto;
         }
         
         &:not(:last-child) {
             margin-right: 1rem;
-        }
-        
-        &:hover {
-            transform: scale(1.1);
-            outline: .5rem solid $mainOrange;
-            z-index: 5;
             
             @include respond(tab-port) {
-                transform: none;
-                outline: none;
-                z-index: none;
+                margin-bottom: 2rem;
+                margin-right: 0;
             }
             
-            @include respond(tab-land) {
-                transform: none;
-                outline: none;
-                z-index: none;
+            @include respond(phone) {
+                margin-bottom: 2rem;
+                margin-right: 0;
+            }
+        }
+        
+        @media (hover: hover) {
+            &:hover {
+                transform: scale(1.1);
+                outline: .5rem solid $mainOrange;
+                z-index: 5;
             }
         }
     }
-
-    &:hover &__item:not(:hover) {
-        transform: scale(.9);
+    
+    @media (hover: hover) {
+        &:hover &__item:not(:hover) {
+            transform: scale(.9);
+        }
     }
 
     &__img {
