@@ -1,12 +1,13 @@
 .navigation {
     background-color: rgba(black, .8);
+    border-bottom: .15rem solid transparent;
     
     &__container {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    
+
     &__list {
         list-style-type: none;
         

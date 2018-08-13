@@ -1,11 +1,12 @@
 .heading-primary {
     text-transform: uppercase;
     text-align: left;
-    color: $color-text-light;
+    color: $color-white;
     
     &--main {
         font-size: 5rem;
-        letter-spacing: .2rem;
+        font-weight: 300;
+        letter-spacing: .1rem;
         animation: moveInDown 1.2s ease-out .5s;
         animation-fill-mode: backwards;
         
@@ -17,9 +18,8 @@
 
     &--tagline {
         word-spacing: .3rem;
-        font-weight: 500;
-        font-style: italic;
-        font-size: 1.5rem;
+        font-weight: 400;
+        font-size: 2rem;
         margin-bottom: 2.5rem;
         animation: moveInUp 1.2s ease-out .5s;
         animation-fill-mode: backwards;

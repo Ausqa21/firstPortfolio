@@ -20,7 +20,7 @@ $breakpoint argument choices:
   font-weight: 600;
   transition: all .15s;
   background-color: #ffa500;
-  color: #313131; }
+  color: #fff; }
 
 @media (hover: hover) {
   .btn:hover, input[type=submit]:hover {
@@ -60,10 +60,11 @@ body {
 .heading-primary {
   text-transform: uppercase;
   text-align: left;
-  color: #313131; }
+  color: #fff; }
   .heading-primary--main {
     font-size: 5rem;
-    letter-spacing: .2rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
     animation: moveInDown 1.2s ease-out .5s;
     animation-fill-mode: backwards; }
     @media only screen and (max-width: 37.5em) {
@@ -72,9 +73,8 @@ body {
         letter-spacing: normal; } }
   .heading-primary--tagline {
     word-spacing: .3rem;
-    font-weight: 500;
-    font-style: italic;
-    font-size: 1.5rem;
+    font-weight: 400;
+    font-size: 2rem;
     margin-bottom: 2.5rem;
     animation: moveInUp 1.2s ease-out .5s;
     animation-fill-mode: backwards; }
@@ -285,7 +285,8 @@ body {
         padding: .7rem 1.2rem; } }
 
 .navigation {
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: .15rem solid transparent; }
   .navigation__container {
     display: flex;
     justify-content: space-between;
