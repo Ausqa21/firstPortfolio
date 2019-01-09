@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
         <link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/responsive-nav.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
@@ -16,7 +17,7 @@
     <body>
         <nav class="navigation">
                 <div class="row">
-                    <div class="navigation__container">
+                    <div class="nav-collapse navigation__container">
                         <div class="navigation__list navigation__list--main">
                             <a href="#" class="btn--nav navigation__item navigation__item-main">Home</a>
                             <a href="#" class="btn--nav navigation__item navigation__item-main">About</a>
@@ -134,5 +135,11 @@
                 </div>
             </footer>
         </main>
+        
+    <!-- scripts-->
+    <script src="js/responsive-nav.min.js"></script>
+    <script>
+      var nav = responsiveNav(".nav-collapse");
+    </script>
     </body>
 </html>

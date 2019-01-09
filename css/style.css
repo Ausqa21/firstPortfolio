@@ -40,19 +40,19 @@ $breakpoint argument choices:
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 70%; }
   @media only screen and (max-width: 75em) {
     html {
-      font-size: 53.125%; } }
+      font-size: 68%; } }
   @media only screen and (max-width: 56.25em) {
     html {
-      font-size: 46.875%; } }
+      font-size: 64%; } }
   @media only screen and (max-width: 37.5em) {
     html {
-      font-size: 43.75%; } }
+      font-size: 60%; } }
   @media only screen and (min-width: 112.5em) {
     html {
-      font-size: 78.125%; } }
+      font-size: 80%; } }
 
 body {
   box-sizing: border-box; }
@@ -90,7 +90,7 @@ body {
   line-height: 1.5;
   color: #313131;
   box-sizing: border-box;
-  background-color: #cbcbcb; }
+  background-color: #e2e2e2; }
 
 .heading-secondary {
   text-transform: uppercase;
@@ -290,21 +290,23 @@ body {
   .navigation__container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; }
+    flex-wrap: nowrap; }
+    @media screen and (max-width: 50em) {
+      .navigation__container {
+        flex-wrap: wrap; } }
   .navigation__list {
     list-style-type: none; }
     .navigation__list--main {
       display: flex;
       justify-content: space-around;
-      flex: 0 60rem;
+      flex: 0 50rem;
       flex-wrap: wrap; }
+      @media screen and (max-width: 50em) {
+        .navigation__list--main {
+          display: block; } }
     .navigation__list--social {
       display: flex;
-      flex: 0 30rem;
       justify-content: space-around; }
-      @media only screen and (max-width: 37.5em) {
-        .navigation__list--social {
-          display: none; } }
   .navigation__item {
     margin: .3rem 1rem;
     flex-shrink: 0;
@@ -314,19 +316,18 @@ body {
     .navigation__item-main:link, .navigation__item-main:visited {
       text-align: center;
       color: white;
-      padding: 1rem 1.2rem;
+      padding: 1rem 1rem;
       display: inline-block;
       flex-basis: 7rem;
       margin-bottom: 0;
       letter-spacing: .2rem; }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 56.25em) {
         .navigation__item-main:link, .navigation__item-main:visited {
+          text-align: left;
+          display: block;
           padding: .7rem 1rem;
           margin-bottom: 1rem;
           letter-spacing: normal; } }
-    @media (hover: hover) {
-      .navigation__item-main:hover {
-        border-bottom: 0.15rem solid #ffa500; } }
     .navigation__item-social {
       padding: 1rem .5rem; }
 
