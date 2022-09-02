@@ -23,7 +23,7 @@
   "author": "Ausqa21",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^8.6.4",
+    "autoprefixer": "^10.4.8",
     "browserslist": "^4.16.5",
     "concat": "^1.0.3",
     "node-sass": "^7.0.0",
